@@ -1,7 +1,7 @@
 
 Project installation
 
-=================================================
+=============================================================================================================
 https://magento.stackexchange.com/questions/366082/magento-2-4-6-could-not-validate-a-connection-to-the-opensearch-no-alive-node
 Replace --search-engine=opensearch with --search-engine= elasticsearch7, it will solve your issue.
 
@@ -28,6 +28,6 @@ php -d memory_limit=-1 bin/magento setup:install \
 bin/magento admin:user:create --admin-user=dm --admin-password=magento --admin-email=dm@mail.com --admin-firstname=Dzmitry --admin-lastname=Marozau
 bin/magento module:disable Magento_TwoFactorAuth
 
-===========================================================
+=============================================================================================================
 
 

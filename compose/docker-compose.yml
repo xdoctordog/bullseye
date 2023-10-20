@@ -67,7 +67,11 @@ services:
       - "6379:6379"
 
   opensearch:
-    image: opensearchproject/opensearch:2.11.0
+#    @TODO: https://magento.stackexchange.com/questions/362754/bin-magento-indexerreindex-gives-no-handler-found-for-uri
+#    @TODO: Looks like you are using Elasticsearch version 8.x which is not supported by Magento 2 at this time.
+#    @TODO: But installation of the project was done on the "opensearchproject/opensearch:2.11.0" image.
+#    image: opensearchproject/opensearch:2.11.0
+    image: markoshust/magento-opensearch:1.2-0
     container_name: "clean_opensearch"
     hostname: opensearch
     ports:
