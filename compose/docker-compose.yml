@@ -22,8 +22,6 @@ services:
       - ../images/php/8.2/usr/local/etc/php/php.ini:/usr/local/etc/php/php.ini
       - ../images/php/8.2/usr/local/etc/php-fpm.d/www.conf:/usr/local/etc/php-fpm.d/www.conf
       - ../images/php/8.2/usr/local/etc/php-fpm.conf:/usr/local/etc/php-fpm.conf
-      - ../laravel-bo/:/var/www/laravel-bo # Sources of Laravel Project
-      - ../laravel-images/nginx/etc/nginx/sites-available/laravel-bo.conf:/etc/nginx/conf.d/laravel-bo.conf # Laravel NGINX conf file
 
   phpfpm:
 #    image: php:8.2-fpm-bullseye
