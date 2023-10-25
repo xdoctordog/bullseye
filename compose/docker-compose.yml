@@ -11,7 +11,7 @@ services:
       - mariadb
       - phpfpm
     volumes: &appvolumes
-      - ~/.composer:/var/www/.composer:cached
+      - ../.composer:/var/www/.composer:cached
       - ../sockdata:/sock:rw
       - ../src/:/var/www/html # Also map nginx.conf inside the container
       - ../images/nginx/etc/nginx/nginx.conf:/etc/nginx/nginx.conf
